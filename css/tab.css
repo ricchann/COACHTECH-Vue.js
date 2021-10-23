@@ -1,0 +1,34 @@
+.container {
+  width: 300px;
+  margin: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.tabMenu {
+  overflow: hidden;
+}
+
+.tabMenu li,
+.tabMenu label {
+  float: left;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  cursor: default;
+  transition: .3s;
+}
+
+.tabMenu li.active,
+.tabMenu :checked + label {
+  background: #000;
+  border-color: #000;
+  color: #fff;
+  cursor: auto;
+}
